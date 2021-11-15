@@ -1,0 +1,24 @@
+### show all activities
+GET  http://http://localhost:4000/api/activities HTTP/1.1
+### Find activity
+GET http://http://localhost:4000/api/activities HTTP/1.1
+### Add Activity
+POST http://http://localhost:4000/api/activities HTTP/1.1
+Content-Type: application/json
+{
+    "name": "Amna",
+    "date": "15-11-2021",
+    "duration": "12",
+    "phone": "03xx-xxxxxxx",
+    "description": "description should not be less than 10 words",
+    "activity_type": "Walking"
+}
+### Update Activity
+PUT http://http://localhost:4000/api/activities HTTP/1.1
+Content-Type: application/json
+{
+    "name": "Amna"
+   
+}
+### Delete Activity
+DELETE http://http://localhost:4000/api/activities HTTP/1.1
